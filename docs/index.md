@@ -23,8 +23,12 @@ For HOG feature extraction, there have already been a few multicore CPU and GPU 
 # Resources
 The Author of KCF open source their [code](https://github.com/joaofaro/KCFcpp) on the github so we are able to build our parallel version based on their implementation. OpenCV is an open source library for computer vision. It provides tons of functions for real-time computer vision. The [code](https://github.com/opencv/opencv) is available on GitHub. we could build our parallel FFT implementation based on the top of OpenCV's source code. We would develop and test our software on the GHC machines which have 8 cores and we may further test the performance on Xeon Phi machines or develop the GPU version to see how our implementation scales if everything goes smoothly.
 
-# Goals
-Minimum Goal: ReImplement FFT algorithm, based on OpenCV FFT implementation, to support multicore parallelism. The parallel FFT should be faster than the original OpenCV library adopted by KCF and improve the overall performance of KCF algorithm in multi-core machines.
+# Evalutation and Goals
+Since KCF tracker currently is a sequential implementation, we hope our parallel version could achieve close to linear speedup comparing to the sequential version. The basic performance measure would just be the speedup/ core number graph. However, as we haven't identified the dependency in the current implementation, we are not very sure if this is possible to achieve the linear speedup.
+
+We may also try to use other libraries like FFTW to compare the performance to see if we have achieved a good enough parallel implementation. 
+
+Minimum Goal: Reimplement parallel FFT algorithm, based on OpenCV FFT implementation, to support multicore parallelism. The parallel FFT should be faster than the original OpenCV library adopted by KCF and improve the overall performance of KCF algorithm in multi-core machines.
 
 Expected Goal: The parallel FFT could achieve sub-linear scalability with the increase of core number in the machine. 
 
