@@ -39,7 +39,7 @@ Stretch Goal: The parallel FFT could beat other excellent DFT calculation librar
 "Exploiting the Circulant Structure of Tracking-by-detection with Kernels", ECCV 2012.
 
 [3] H. Kiani Galoogahi, A. Fagg, C. Huang, D. Ramanan, S.Lucey.
-"Need for Speed: A Benchmark for Higher Frame Rate Object Tracking", 2017, arXiv preprint arXiv:1703.05884
+"Need for Speed: A Benchmark for Higher Frame Rate Object Tracking", 2017, arXiv preprint arXiv:1703.05884.
 
 [4] Y. Wu and J. Lim and M. Yan
 "Online Object Tracking: A Benchmark", CVPR 2013
