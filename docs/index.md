@@ -1,7 +1,7 @@
 # C++ Parallel KCF Tracker
 Team members:
-Yuchen Huo (<yhuo1@andrew.cmu.edu>)
-Danhao Guo (<danhaog@andrew.cmu.edu>)
+-Yuchen Huo (<yhuo1@andrew.cmu.edu>)
+-Danhao Guo (<danhaog@andrew.cmu.edu>)
 
 # Summary
 We are going to extend the the Kernalized Correlation Filter (KCF) [1, 2], a fast oject tracker, to a multicore platform and even GPU.
