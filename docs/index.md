@@ -4,7 +4,7 @@ Team members:
 - Danhao Guo (<danhaog@andrew.cmu.edu>)
 
 # Summary
-We are going to extend the the Kernalized Correlation Filter (KCF) [1, 2], a fast oject tracker, to a multicore platform and even GPU.
+We are going to extend the the Kernalized Correlation Filter (KCF) [1, 2], a fast oject tracker, to a multicore platform.
 
 # Background
 Visual oject tracking is one of the popular tasks in the computer vision area. There are a lot of different implementations focusing on how to improve the accuracy of the tracking algorithm. These implementations mostly target at the "real time" systems, these algorithms have been aimed at approximate frame rate of 30 Frames Per Second(FPS), which is enough for previous devices and workloads. However, for higher frame rate cameras (240 FPS) or an offline video processing pipeline, 30 FPS still seems to be slow. We look through some of the benchmark results [3, 4] and find this Kernalized Correlation Filter which provide top speed on CPU and pretty good accuracy. We decide to further extend this algorithm to be able to benefit from multicore systems and be fast enough to be used offline.
@@ -28,7 +28,7 @@ Since KCF tracker currently is a sequential implementation, we hope our parallel
 
 We may also try to use other libraries like FFTW to compare the performance to see if we have achieved a good enough parallel implementation. 
 
-Minimum Goal: Reimplement parallel FFT algorithm, based on OpenCV FFT implementation, to support multicore parallelism. The parallel FFT should be faster than the original OpenCV library adopted by KCF and improve the overall performance of KCF algorithm in multi-core machines.
+Minimum Goal: Reimplement parallel FFT algorithm, based on OpenCV FFT implementation, to support multicore and SIMD parallelism. The parallel FFT should be faster than the original OpenCV library adopted by KCF and improve the overall performance of KCF algorithm in multi-core machines.
 
 Expected Goal: The parallel FFT could achieve sub-linear scalability with the increase of core number in the machine. 
 
