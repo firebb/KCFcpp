@@ -28,7 +28,7 @@ Since KCF tracker currently is a sequential implementation, we hope our parallel
 
 We may also try to use other libraries like FFTW to compare the performance to see if we have achieved a good enough parallel implementation. 
 
-Minimum Goal: Reimplement parallel FFT algorithm, based on OpenCV FFT implementation, to support multicore parallelism. The parallel FFT should be faster than the original OpenCV library adopted by KCF and improve the overall performance of KCF algorithm in multi-core machines.
+Minimum Goal: Reimplement parallel FFT algorithm, based on OpenCV FFT implementation, to support multicore and SIMD parallelism. The parallel FFT should be faster than the original OpenCV library adopted by KCF and improve the overall performance of KCF algorithm in multi-core machines.
 
 Expected Goal: The parallel FFT could achieve sub-linear scalability with the increase of core number in the machine. 
 
