@@ -45,23 +45,28 @@ Stretch Goal: The parallel FFT could beat other excellent DFT calculation librar
 
 # Schedule
 Week 1 (Apr. 3rd): 
+
 Deciding project idea; 
 Investigation background (Papers and Code); 
 Writing proposal. 
 
 Week 2 (Apr. 10th): 
+
 Implementing parallel FFT;
 Implementing parallel HOG features extraction.
 
 Week 3 (Apr. 17th): 
+
 Integrating two implementations into KCF algorithm;
-Further optimization on the whole ParaFCF algorithm.
+Further optimization on the whole ParaKCF algorithm.
 
 Week 4 (Apr. 24th):
+
 Conducting experiments to evaluate ParaKCF on both performance improvement and scalability;
 Tuning the implementation to improve the performance.
 
 Week 5 (May 1st): 
+
 Cleaning code;
 Perfecting documentation;
 Writing final report;
