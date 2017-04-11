@@ -32,7 +32,7 @@ We may try to use other libraries like FFTW to compare the performance to see if
 
 Minimum Goal: 1. ReImplement FFT algorithm to support multicore and SIMD parallelism. The parallel FFT should be faster than the original FFT implementation in KCF and improve the overall performance of KCF algorithm on multicore machines. 2. Implement multithread and SIMD version of the HOG feature computation, along with parallel FFT, to improve the performance of KCF algorithm.
 
-Expected Goal: The parallel FFT could achieve sub-linear scalability with the increase of core number in the machine. 
+Expected Goal: 1. The parallel FFT could achieve sub-linear scalability with the increase of core number in the machine. 2. Perform enough experiment to make parallel HOG feature processing fast enough to reach some other implementation's speedup.
 
 Stretch Goal: The parallel FFT could beat other excellent DFT calculation libraries, such as FFTW, in performance.
 
