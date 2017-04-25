@@ -1,4 +1,4 @@
-#NOTICE
+# NOTICE
 We have changed our project to https://firebb.github.io/parahmm/.
 
 # C++ Parallel KCF Tracker
