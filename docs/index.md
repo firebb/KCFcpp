@@ -1,3 +1,6 @@
+#NOTICE
+We have changed our project to https://firebb.github.io/parahmm/.
+
 # C++ Parallel KCF Tracker
 Team members:
 - Yuchen Huo (<yhuo1@andrew.cmu.edu>)
