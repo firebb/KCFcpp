@@ -1,5 +1,5 @@
 # NOTICE
-We have changed our project to https://firebb.github.io/parahmm/.
+We have changed our project to [Parallel Hidden Markov Model ](https://github.com/joaofaro/KCFcpp)
 
 # C++ Parallel KCF Tracker
 Team members:
